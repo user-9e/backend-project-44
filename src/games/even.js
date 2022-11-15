@@ -3,7 +3,8 @@ import {
   user, greeting, congrats, randomInteger, responseYN,
 } from '../index.js';
 
-console.log(`${greeting}\nAnswer "yes" if the number is even, otherwise answer "no"`);
+console.log(greeting);
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 for (let i = 0; i < 3; i += 1) {
   const randomNumber = randomInteger(100);

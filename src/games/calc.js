@@ -3,7 +3,8 @@ import {
   user, greeting, operators, congrats, randomInteger, response,
 } from '../index.js';
 
-console.log(`${greeting}\nWhat is the result of the expression?`);
+console.log(greeting);
+console.log('What is the result of the expression?');
 
 for (let i = 0; i < 3; i += 1) {
   const randomNumber1 = randomInteger(30);

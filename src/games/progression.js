@@ -3,7 +3,8 @@ import {
   user, greeting, congrats, hideIndex, progression, randomInteger, response,
 } from '../index.js';
 
-console.log(`${greeting}\nWhat number is mising in this progression?`);
+console.log(greeting);
+console.log('What number is mising in this progression?');
 
 for (let i = 0; i < 3; i += 1) {
   const progressionStep = randomInteger(10);

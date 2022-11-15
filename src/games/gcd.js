@@ -3,7 +3,8 @@ import {
   user, greeting, congrats, gcd, randomInteger, response,
 } from '../index.js';
 
-console.log(`${greeting}\nFind the greatest common divisor of given numbers.`);
+console.log(greeting);
+console.log('Find the greatest common divisor of given numbers.');
 
 for (let i = 0; i < 3; i += 1) {
   const randomNumber1 = randomInteger(40);
