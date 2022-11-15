@@ -25,3 +25,14 @@ export function progression(int) {
   }
   return hideIndex(result);
 }
+
+export function isPrime(int) {
+  if (int % 2 === 0 || int === 1) {
+    return false;
+  }
+  for (let i = 3; i <= Math.floor(Math.sqrt(int)); i += 1) {
+    if (int % i === 0) {
+      return false;
+    }
+  } return true;
+}
