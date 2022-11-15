@@ -15,6 +15,7 @@ for (let i = 0; i < 3; i += 1) {
     break;
   }
   if (answer !== correctAnswer) {
+    console.log(`Let's try again, ${user}!`);
     break;
   }
 }
