@@ -4,6 +4,7 @@ export const user = readlineSync.question('Welcome to the Brain Games!\nMay I ha
 export const greeting = `Hello, ${user}!`;
 export const congrats = `Congratulations, ${user}!`;
 export const operators = ['-', '+', '*'];
+export const randomInteger = (int) => parseInt((Math.floor(Math.random() * int)), 10);
 
 export const gcd = (a, b) => {
   if (b === 0) {
@@ -11,3 +12,16 @@ export const gcd = (a, b) => {
   }
   return gcd(b, (a % b));
 };
+
+export function hideIndex(coll, index) {
+  coll[index] = '..';
+  return coll;
+}
+
+export function progression(int) {
+  const result = [2];
+  for (let i = 0; result.length < 10; i += 1) {
+    result.push(result[i] + int);
+  }
+  return hideIndex(result);
+}

@@ -1,10 +1,12 @@
 import readlineSync from 'readline-sync';
-import { user, greeting, congrats } from '../index.js';
+import {
+  user, greeting, congrats, randomInteger,
+} from '../index.js';
 
 console.log(`${greeting}\nAnswer "yes" if the number is even, otherwise answer "no"`);
 
 for (let i = 0; i < 3;) {
-  const randomNumber = parseInt((Math.floor(Math.random() * 100)), 10);
+  const randomNumber = randomInteger(100);
   const correctAnswer = (randomNumber % 2 === 0) ? 'yes' : 'no';
   const answer = readlineSync.question(`Question: ${randomNumber}\nYour answer: `);
   if (answer === correctAnswer) {
