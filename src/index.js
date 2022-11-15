@@ -42,3 +42,9 @@ export function response(userAnswer, realAnswer) {
     console.log('Correct!');
   } else console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${realAnswer}'.`);
 }
+
+export function responseYN(userAnswer, realAnswer) {
+  if (userAnswer === realAnswer) {
+    console.log('Correct!');
+  } else console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${realAnswer}'.`);
+}

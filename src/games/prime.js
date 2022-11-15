@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 import {
-  user, greeting, congrats, gcd, randomInteger, isPrime, response,
+  user, greeting, congrats, gcd, randomInteger, isPrime, responseYN,
 } from '../index.js';
 
 console.log(`${greeting}\nAnswer "yes" if given number is prime. Otherwise answer "no".`);
@@ -9,9 +9,9 @@ for (let i = 0; i < 3; i += 1) {
   const randomNumber = randomInteger(100);
   const correctAnswer = isPrime(randomNumber) ? 'yes' : 'no';
   const answer = readlineSync.question(`Question: ${randomNumber}\nYour answer: `);
-  response(answer, correctAnswer);
+  responseYN(answer, correctAnswer);
 
-  if (+answer !== correctAnswer) {
+  if (answer !== correctAnswer) {
     console.log(`Let's try again, ${user}!`);
     break;
   }
