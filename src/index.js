@@ -4,7 +4,7 @@ export const user = readlineSync.question('Welcome to the Brain Games!\nMay I ha
 export const greeting = `Hello, ${user}!`;
 export const congrats = `Congratulations, ${user}!`;
 export const operators = ['-', '+', '*'];
-export const randomInteger = (int) => parseInt((Math.floor(Math.random() * int)), 10);
+export const randomInteger = (int) => parseInt((Math.floor(Math.random() * int)), 10) + 1;
 
 export const gcd = (a, b) => {
   if (b === 0) {
@@ -14,6 +14,7 @@ export const gcd = (a, b) => {
 };
 
 export function hideIndex(coll, index) {
+  // eslint-disable-next-line no-param-reassign
   coll[index] = '..';
   return coll;
 }
@@ -37,7 +38,7 @@ export function isPrime(int) {
   } return true;
 }
 export function response(userAnswer, realAnswer) {
-  if (userAnswer === realAnswer) {
+  if (+userAnswer === realAnswer) {
     console.log('Correct!');
   } else console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${realAnswer}'.`);
 }

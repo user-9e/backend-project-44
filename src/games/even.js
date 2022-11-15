@@ -11,7 +11,7 @@ for (let i = 0; i < 3; i += 1) {
   const answer = readlineSync.question(`Question: ${randomNumber}\nYour answer: `);
   response(answer, correctAnswer);
 
-  if (answer !== correctAnswer) {
+  if (+answer !== correctAnswer) {
     console.log(`Let's try again, ${user}!`);
     break;
   }

@@ -10,12 +10,12 @@ for (let i = 0; i < 3; i += 1) {
   const progressionForAnswer = progression(progressionStep);
   const randomIndex = randomInteger(10);
   const correctAnswer = progressionForAnswer[randomIndex];
-  const progressionForQuestion = progressionForAnswer;
-  hideIndex(progressionForQuestion, randomIndex);
-  const answer = readlineSync.question(`Question: ${progressionForQuestion}\nYour answer: `);
+  let progressionForQuestion = progressionForAnswer;
+  progressionForQuestion = hideIndex(progressionForQuestion, randomIndex);
+  const answer = readlineSync.question(`Question: ${progressionForQuestion.join(' ')}\nYour answer: `);
   response(answer, correctAnswer);
 
-  if (answer !== correctAnswer) {
+  if (+answer !== correctAnswer) {
     console.log(`Let's try again, ${user}!`);
     break;
   }
