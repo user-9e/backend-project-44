@@ -36,3 +36,8 @@ export function isPrime(int) {
     }
   } return true;
 }
+export function response(userAnswer, realAnswer) {
+  if (userAnswer === realAnswer) {
+    console.log('Correct!');
+  } else console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${realAnswer}'.`);
+}
