@@ -27,7 +27,9 @@ for (let i = 0; i < 3; i += 1) {
   const question = `Question: ${randomNumber1} ${randomOperator} ${randomNumber2}`;
   console.log(question);
   const answer = readlineSync.question('Your answer: ');
+
   response(answer, correctAnswer);
+
   if (+answer !== correctAnswer) {
     console.log(`Let's try again, ${user}!`);
     break;
