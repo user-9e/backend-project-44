@@ -20,11 +20,11 @@ export function hideIndex(coll, index) {
 }
 
 export function progression(int) {
-  const result = [2];
+  let result = [2];
   for (let i = 0; result.length < 10; i += 1) {
     result.push(result[i] + int);
   }
-  return hideIndex(result);
+  return result;
 }
 
 export function isPrime(int) {

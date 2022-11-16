@@ -9,10 +9,13 @@ console.log('What number is missing in the progression?');
 for (let i = 0; i < 3; i += 1) {
   const progressionStep = randomInteger(10);
   const progressionForAnswer = progression(progressionStep);
-  const randomIndex = randomInteger(10);
+  const randomIndex = randomInteger(9);
   const correctAnswer = progressionForAnswer[randomIndex];
   let progressionForQuestion = progressionForAnswer;
   progressionForQuestion = hideIndex(progressionForQuestion, randomIndex);
+  console.log(correctAnswer);
+  console.log(progressionForAnswer);
+  console.log(progressionForQuestion);
   console.log(`Question: ${progressionForQuestion.join(' ')}`);
   const answer = readlineSync.question('Your answer: ');
   response(answer, correctAnswer);
