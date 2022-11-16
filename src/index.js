@@ -20,7 +20,7 @@ export function hideIndex(coll, index) {
 }
 
 export function progression(int) {
-  let result = [2];
+  const result = [2];
   for (let i = 0; result.length < 10; i += 1) {
     result.push(result[i] + int);
   }
