@@ -4,7 +4,7 @@ import {
 } from '../index.js';
 
 console.log(greeting);
-console.log('What number is mising in the progression?');
+console.log('What number is missing in the progression?');
 
 for (let i = 0; i < 3; i += 1) {
   const progressionStep = randomInteger(10);
