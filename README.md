@@ -12,12 +12,12 @@ Random mathematical operations (addition, substraction, multiplication).
 <a href="https://asciinema.org/a/94Ofqr9lUykMasrxWz9rmuO0b" target="_blank"><img src="https://asciinema.org/a/94Ofqr9lUykMasrxWz9rmuO0b.svg" /></a>
 
 ## Even Odd Numbers
-This game generates random numbers for users. Users have to tell if a number is odd or even.
+This game generates random numbers. Users have to tell if a number is odd or even.
 
 <a href="https://asciinema.org/a/8AHSAO2iiwRUxzvI8gP767wLL" target="_blank"><img src="https://asciinema.org/a/8AHSAO2iiwRUxzvI8gP767wLL.svg" /></a>
 
 ## Greates Common Divisor
-In this games users have to find the greates common divisor of the two given numbers.
+In this game users have to find the greatest common divisor of the two given numbers.
 
 <a href="https://asciinema.org/a/txzyGLYEzdNPvD7GuTdDZq8Zh" target="_blank"><img src="https://asciinema.org/a/txzyGLYEzdNPvD7GuTdDZq8Zh.svg" /></a>
 
@@ -27,6 +27,6 @@ Users are given a sequence of numbers and have to find out which one is missing.
 <a href="https://asciinema.org/a/rXfj1NIPkgsd1z5Vr0eG2k1P4" target="_blank"><img src="https://asciinema.org/a/rXfj1NIPkgsd1z5Vr0eG2k1P4.svg" /></a>
 
 ## Prime
-The game generates random numbers and users have to tell if the numbers are prime.
+The game generates random numbers. Users have to tell if the numbers are prime.
 
 <a href="https://asciinema.org/a/Re3sNZaF02xMwYhSfjDqzECsJ" target="_blank"><img src="https://asciinema.org/a/Re3sNZaF02xMwYhSfjDqzECsJ.svg" /></a>
