@@ -13,9 +13,6 @@ for (let i = 0; i < 3; i += 1) {
   const correctAnswer = progressionForAnswer[randomIndex];
   let progressionForQuestion = progressionForAnswer;
   progressionForQuestion = hideIndex(progressionForQuestion, randomIndex);
-  console.log(correctAnswer);
-  console.log(progressionForAnswer);
-  console.log(progressionForQuestion);
   console.log(`Question: ${progressionForQuestion.join(' ')}`);
   const answer = readlineSync.question('Your answer: ');
   response(answer, correctAnswer);
