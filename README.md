@@ -1,6 +1,12 @@
 # Brain Games
 A set of 5 games to train your brain. To win a game you have to give 3 correct answers in a row. An incorrect answer ends the game.
 
+## Requirements
+MacOS, Linux, Windows
+
+## Install
+make install
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/user-9e/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/user-9e/backend-project-44/actions)
 

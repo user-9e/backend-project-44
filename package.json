@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "type": "module",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/user-9e/backend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/user-9e/backend-project-44/actions)",
+  "description": "Five mini brain games. Each game is dedicated to a certain mathematical operation.",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
